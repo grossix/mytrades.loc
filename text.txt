@@ -1,0 +1,74 @@
+TODO-list:
+
+//TODO rewrite all TODOs (:D) following template WHAT TO DO?/WHERE?(page/file)/WHAT?/OTHER
+
+
+BACKEND:
+//TODO input on trades with items sorted by keys amount not date
+//TODO 'keys' string output for each set of items on items page
+//TODO watch on select bind
+//TODO fix controller routes
+//TODO set correct timezone (now it's -3 hours)
+//TODO flash notifications for different user actions
+//TODO remake games based on steam id, not their base one, add trinium wards, delete second game of the center of the earth 
+//TODO display price items on trades like amount of keys * 2.49 + profit of trade
+//TODO refactor code in controllers
+//TODO refactor routes.php file
+
+//TODO counts on game page - how many cards dropped, how much money earned
+//TODO pages like the games page should be processed by SalesController@index, cause it's its logic, not Games one
+//TODO counts (earned total on trades, sales, bonuses)
+//TODO pagination on trades, sales, bonuses, logs, reports, games, user page :D
+//TODO input on sales with games sorted by name not date
+//TODO validation at least required at max - exists in database (for games)
+//TODO REST for trades, sales, bonuses, reports table
+//TODO counts on items page - in how many trades it took part, how much money earned with it
+//TODO event on every deleting operation = - user balance
+//TODO page title on each page
+//TODO user page with last trades, sales and bonuses
+//TODO import /Event
+//TODO displaying errors below exact input, not in just a list
+//TODO add select2 plugin onto edit sales, other edits page
+//TODO fix items calculating price and keys value while adding
+//TODO add on users page stats about items & games amount
+//TODO fix journey on the earth 2x
+//TODO change validation messages on my own
+//TODO use blade stack attribute
+
+
+FRONTEND:
+//TODO button group if it is possible (:
+//TODO remove <br>, add margins instead
+//TODO fix 2 lines name
+//TODO try to add buttons below input sales profit
+//TODO refactor names of the blocks
+//TODO refactor css rules (divide by page blocks)
+
+//TODO fix Total earned on collections with pagination (like trades, sales, bonuses)
+//TODO add displaying game name if sales are filtered by it
+//TODO replace selfmade popup adding form onto bootstrap slider
+//TODO fix profit on cards on sales page and bluring hovering
+//TODO styles for trades, sales, bonuses, logs, reports, games, user page :D
+//TODO extract trades, sales, bonuses blocks in _list file
+//TODO use blade feature to foreach items or echo something if there is no ones
+//TODO fix sega-mega-drive (subscription, not game) image size
+//TODO display user balance in the top near nickname
+//TODO display red or green on bonuses page when profit is positive or negative value
+//TODO fix game title link hovering on games page on badges
+//TODO extract exact item to another file (cause it duplicates onto items & trades page)
+//TODO extract all lists in another files (like on items page)
+//TODO import tooltip block from trades & items pages in another file
+//TODO add tooltip block to a key on trades page
+//TODO extract edit, delete buttons in another file (cause DEL button in form take too much place and is the same)
+//TODO fix trades page layout, make them 2 on a row
+//TODO in header user balance number_format(,2)
+//TODO on items page profit per item number_format(,2)
+//TODO add to partials file _ in the beginning of the name
+//TODO alert on logout user
+//TODO delete 'x' from select2 from games page select (choosing game)
+//TODO on opening sale, game first input focused
+
+
+TESTS:
+//TODO tests for adding trades, sales -> changing balance, adding keys if balance is more than key value (2.49$)
+//TODO tests for adding game (without age restriction and with it)

@@ -1,0 +1,457 @@
+body {
+    /*font-family: 'Yanone Kaffeesatz', serif;*/
+    /*font-family: 'ABeeZee', serif;*/
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+}
+
+#post-form {
+    display: none;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 1;
+
+    background-color: #f2f4f5;
+
+}
+
+.card_name, .card_game {
+    overflow: hidden;
+    text-align: center;
+}
+
+.card_image {
+    width: 100px;
+}
+
+
+.block-item, .item_main {
+    position: relative;
+    display: inline-block;
+    /*float: left;*/
+    pagging-top: 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.block-item-key {
+    margin-right: 0;
+}
+
+.item_image {
+    width: 100px;
+    padding: 5px 5px 10px;
+}
+
+.item_name {
+    font-weight:bold;
+    text-align: center;
+}
+
+.item_stattrak_name {
+    color: rgb(207, 106, 50);
+}
+
+.stattrak_place {
+    height:20px;
+    display: block;
+}
+
+.stattrak_logo,
+.condition_logo,
+.price_logo {
+    position: absolute;
+    font-weight: bold;
+    padding: 1px 3px;
+    border-radius: 5px;
+    float: left;
+    display: inline;
+}
+
+.stattrak_logo {
+    top: 0;
+    left: 0;
+    color: rgb(207, 106, 50);
+    background-color: rgba(255, 191, 0, 0.4);
+}
+
+.condition_logo {
+    top: 0;
+    right: 0;
+    color: #000;
+    background-color: rgba(4, 164, 230, 0.2);
+}
+
+.price_logo{
+    bottom: 0;
+    right: 0;
+    color: #000;
+    background-color: rgba(4, 164, 230, 0.2);
+}
+
+.card_price_logo {
+    /*font-weight: bold;*/
+    padding: 3px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #f2f4f5;
+    text-align: center;
+    /*background-color: rgba(4, 164, 230, 0.7);*/
+}
+
+.clear {
+    clear: both;
+}
+
+/** ITEMS QUALITIES COLORS **/
+
+.block-item {
+    background-color: #f2f4f5;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.block-item:active,
+.block-item:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.item_quality_consumer_border {
+    border-bottom: 10px solid rgb(176, 195, 217);
+}
+
+.item_quality_mil-spec_border {
+    border-bottom: 10px solid rgb(75, 105, 255);
+}
+
+.item_quality_industrial_border {
+    border-bottom: 10px solid rgb(94, 152, 217);
+}
+
+.item_quality_restricted_border {
+    border-bottom: 10px solid rgb(136, 71, 255);
+}
+
+.item_quality_classified_border {
+    border-bottom: 10px solid rgba(211, 44, 230, 0.2);
+}
+
+.item_quality_covert_border {
+    border-bottom: 10px solid rgb(235, 75, 75);
+}
+
+.item_quality_consumer_text {
+    color: rgb(176, 195, 217);
+}
+
+.item_quality_mil-spec_text {
+    color: rgb(75, 105, 255);
+}
+
+.item_quality_industrial_text {
+    color: rgb(94, 152, 217);
+}
+
+.item_quality_restricted_text {
+    color: rgb(136, 71, 255);
+}
+
+.item_quality_classified_text {
+    color: rgba(211, 44, 230, 0.2);
+}
+
+.item_quality_covert_text {
+    color: rgb(235, 75, 75);
+}
+
+/** ITEMS QUALITIES COLORS **/
+
+.keys_block {
+    border-radius: 5px;
+    /*border: 1px solid #ccc;*/
+    /*display: inline-block;*/
+    margin-bottom: 20px;
+    padding: 0 10px 10px;
+    text-align: center;
+}
+
+.keys_block h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.trade_keys,
+.trade_item,
+.trade_profit {
+    display: inline-block;
+}
+
+.trade_keys_amount,
+.trade_profit{
+    font-size: 60px;
+    vertical-align: middle;
+}
+
+.trade_keys_amount {
+    margin-left: 7px;
+}
+
+.trade_keys {
+    background-color: #f2f4f5;
+}
+
+.trade_keys_image {
+    width: 100px;
+}
+
+.trade_profit {
+    background-color: rgba(69, 245, 10, 0.3);
+}
+
+.btn_trade_profit {
+    margin-top: 10px;
+    height: 100px;
+    line-height: 70px;
+    font-size: 40px;
+}
+
+.fa {
+    vertical-align: middle;
+}
+
+
+button.spoiler:after {
+    content: " [-]";
+}
+
+button.spoiler.collapsed:after {
+    content: " [+]";
+}
+
+.sale {
+    margin-bottom: 50px;
+}
+
+.sale_background_image {
+    background-size: cover;
+    display: block;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0.7;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s;
+}
+
+.sale_background_image:hover {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.sale_background_image:hover + a{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.sale_content {
+    margin-top: 15px;
+    margin-left: 25px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.sale_big_profit{
+    width: 50px;
+    position: absolute;
+    top: 18%;
+    left: 35%;
+    font-size: 36px;
+    color: rgba(69, 245, 10, 0.8);
+
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    z-index: 2;
+}
+
+.sale_big_profit_link,
+.sale_big_profit_link:hover,
+.sale_big_profit_link:active {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.sale_big_profit_link {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.trade {
+    /*width: 700px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-bottom: 30px;*/
+}
+
+.bonus {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.bonus_profit {
+    margin-top: 15px;
+}
+
+.user_info_table span {
+    font-size: 14px;
+}
+
+.badge-success {
+    background-color: #5cb85c;
+}
+
+.game_image {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.game_image:hover,
+.game_image:active {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.dropdown-top-menu {
+    width: 229px;
+}
+
+.fa-angle-right {
+    margin-left: 10px;
+    margin-right: 10px;
+	color: #a9a9a9;
+}
+
+.link_no_style {
+    color: inherit;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.link_no_style:hover,
+.link_no_style:active {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.report_button {
+    margin-right: 4px;
+}
+
+.trade_date {
+    margin-top: 10px;
+}
+
+.trade_buttons {
+    margin-bottom: 10px;
+}
+
+.sale_buttons {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.game_buttons {
+    margin-bottom: 5px;
+    margin-right: 41px;
+    padding-left: 15px;
+}
+
+.item_buttons {
+    margin-top: 3px;
+    text-align: center;
+}
+
+.bonus_buttons {
+    /*padding-left: 30px;*/
+}
+
+.item_buttons .delete_button {
+    display: inline;
+}
+
+.item_stats {
+    margin-bottom: 5px;
+}
+
+.item_edit_preview {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.game_edit_preview {
+    margin-bottom: 20px;
+}
+
+.game_name {
+    margin-left: 140px;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+}
+
+.badge:hover,
+.badge:active {
+    cursor: pointer;
+}
+
+.trade_date,
+.trade_buttons {
+    margin-right: 30px;
+}
+
+.user_heading {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+html {
+    position: relative;
+    min-height: 100%
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/*.footer_text {*/
+    /*vertical-align: middle;*/
+/*}*/
+
+.report_hours {
+    font-size: 11px;
+}
+
+.tooltip_content, .tooltip_key_content {
+	line-height: 1.4em;
+}
